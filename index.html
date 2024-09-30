@@ -1,0 +1,300 @@
+<html>
+  <head>
+    <title>Techknights Association</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #ffffff;
+      }
+      .nav {
+        display: flex;
+        justify-content: center;
+        background-color: #ffffff;
+        padding: 10px 0;
+        border-bottom: 10px solid rgba(163, 191, 170, 0.5);
+        position: fixed;
+        width: 100%;
+        top: 100px;
+        z-index: 1000;
+      }
+      .header {
+        text-align: center;
+        padding: 20px;
+        background-color: #ffffff;
+        position: fixed;
+        width: 100%;
+        top: 0px; /* Adjusted for fixed nav */
+        z-index: 999;
+      }
+      .header h1 {
+        margin: 0;
+        color: #2c7a7b;
+        font-size: 36px;
+      }
+      .header p {
+        margin: 0;
+        color: #6b7280;
+        font-size: 18px;
+      }
+      .nav a {
+        margin: 0 15px;
+        text-decoration: none;
+        color: #4a5568;
+        font-size: 18px;
+      }
+      .content {
+        background-color: #8fbc8f;
+        padding: 50px 20px;
+        text-align: center;
+        margin-top: 150px; /* Adjusted for fixed nav and header */
+      }
+      .content h2 {
+        color: #000000;
+        font-size: 32px;
+        margin-bottom: 20px;
+      }
+      .content p {
+        color: #000000;
+        font-size: 18px;
+        margin: 10px 0;
+      }
+      .content .highlight {
+        color: #2c7a7b;
+        font-size: 20px;
+      }
+      .footer {
+        text-align: center;
+        padding: 20px;
+        background-color: #8fbc8f;
+      }
+      .footer .social-icons {
+        margin: 20px 0;
+      }
+      .footer .social-icons a {
+        margin: 0 10px;
+        color: #000000;
+        font-size: 24px;
+        text-decoration: none;
+      }
+      .footer .event-details {
+        color: #000000;
+        font-size: 18px;
+      }
+      .footer .event-details i {
+        margin-right: 5px;
+      }
+      .main-content {
+        padding: 20px;
+      }
+      .main-content h2 {
+        text-align: center;
+        font-size: 32px;
+        color: #000000;
+        margin: 20px 0;
+      }
+      .main-content h3 {
+        text-align: center;
+        font-size: 18px;
+        color: #757575;
+        margin: 10px 0 30px;
+      }
+      .circle {
+        width: 300px;
+        height: 300px;
+        background-color: #7fbd92;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+      }
+      .circle p {
+        text-align: center;
+        color: #000000;
+        font-size: 16px;
+        margin: 0;
+        padding: 20px;
+      }
+      .content {
+        text-align: center;
+        padding: 50px 20px;
+      }
+      .formContent {
+        text-align: center;
+        padding: 50px 20px;
+      }
+      .outer-box {
+        display: inline-block;
+        padding: 30px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        background-color: #fff;
+      }
+      .form-container {
+        text-align: left;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        background-color: #fff;
+      }
+      .form-container h2 {
+        margin-top: 0;
+        color: #00796b;
+      }
+      .form-container p {
+        margin: 5px 0;
+        color: #757575;
+      }
+      .form-container label {
+        display: block;
+        margin: 10px 0 5px;
+        color: #757575;
+      }
+      .form-container input[type="text"],
+      .form-container input[type="email"],
+      .form-container input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+      }
+      .form-container input[type="submit"] {
+        background-color: #00796b;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .form-container input[type="submit"]:hover {
+        background-color: #004d40;
+      }
+      .form-container input[type="text"],
+      .form-container input[type="date"],
+      .form-container textarea {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+      .date-container {
+        position: relative;
+      }
+      .date-container input[type="text"] {
+        padding-right: 30px;
+      }
+      .date-container .fa-calendar-alt {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #888;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>TECHKNIGHTS ASSOCIATION</h1>
+      <p>PRESENTS</p>
+    </div>
+    <div class="nav">
+      <a href="#">ABOUT US</a>
+      <a href="#">EVENT</a>
+      <a href="#">REGISTER</a>
+    </div>
+    <div class="content">
+      <h2>ABOUT US</h2>
+      <p>Department Of Computer Science And Business Systems</p>
+      <p>Presenting International Level Symposium On 5th October,2024</p>
+      <p>"Towen Gen3"</p>
+      <p>We Have Planned To Conduct Technical Event As Well As</p>
+      <p>Non Technical Event With Exciting Prizes!!</p>
+      <p class="highlight">Techknights Association Welcomes You</p>
+      <p class="highlight">To Explore A New Horizons>></p>
+    </div>
+    <div class="footer">
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+      <div class="event-details">
+        <p><i class="fas fa-calendar-alt"></i> 05/10/2024</p>
+        <p><i class="fas fa-clock"></i> 9:00am-4:00pm</p>
+      </div>
+    </div>
+    <div class="main-content">
+      <h2>FRONTEND MENTOR</h2>
+      <h3>Unlock And Elevate Your Frontend Skills</h3>
+      <div class="circle">
+        <p>
+          "Frontend Mentor Is An Exciting Event For Developers, Where They Need
+          To Code A Given Web Design Page Using Html, Css And Javascript."
+        </p>
+      </div>
+    </div>
+    <hr />
+    <div class="formContent">
+      <div class="outer-box">
+        <div class="form-container">
+          <h2>REGISTER HERE:</h2>
+          <p><a href="#">FILL THIS FORM</a></p>
+          <form>
+            <label for="name">NAME</label>
+            <input type="text" id="name" name="name" />
+            <label for="email">EMAIL</label>
+            <input type="email" id="email" name="email" />
+            <label for="password">PASSWORD</label>
+            <input type="password" id="password" name="password" />
+            <h2>YEAR</h2>
+            <label><input type="radio" name="year" value="1st" /> 1st</label>
+            <label><input type="radio" name="year" value="2nd" /> 2nd</label>
+            <label><input type="radio" name="year" value="3rd" /> 3rd</label>
+            <label
+              ><input type="radio" name="year" value="4th" checked /> 4th</label
+            >
+
+            <h2>GENDER</h2>
+            <label
+              ><input type="radio" name="gender" value="male" /> Male</label
+            >
+            <label
+              ><input type="radio" name="gender" value="female" checked />
+              Female</label
+            >
+
+            <h2 class="date-container">DOB</h2>
+            <i class="fas fa-calendar-alt"></i>
+            <input type="text" placeholder="Dd-Mm-Yyyy" />
+
+            <h2>SKILLS</h2>
+            <label
+              ><input type="checkbox" name="skills" value="html" /> HTML</label
+            >
+            <label
+              ><input type="checkbox" name="skills" value="css" /> CSS</label
+            >
+            <label
+              ><input type="checkbox" name="skills" value="javascript" />
+              JavaScript</label
+            >
+
+            <h2>WHY JOINING THIS EVENT?</h2>
+            <textarea placeholder="Reason For Joining This Event"></textarea>
+            <input type="submit" value="Submit" />
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
